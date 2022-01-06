@@ -18,14 +18,14 @@ public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) 
     {
         vector<ListNode*> visitedA, visitedB;
-        ListNode* intersection;
+        ListNode* intersection = NULL;
 
         while(headA || headB)
         {
             if(headA)
             {
                 visitedA.push_back(headA);
-                auto it = std::find(visitedB.begin(), visitedB.end(), headA);
+                auto it = find(visitedB.begin(), visitedB.end(), headA);
                 if(it != visitedB.end())
                 {
                     intersection = headA;
@@ -37,8 +37,8 @@ public:
             if(headB)
             {
                 visitedB.push_back(headB);
-                auto it = std::find(visitedA.begin(), visitedA.end(), headB);
-                if(it != visitedB.end())
+                auto it = find(visitedA.begin(), visitedA.end(), headB);
+                if(it != visitedA.end())
                 {
                     intersection = headB;
                     break;
