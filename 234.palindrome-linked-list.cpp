@@ -4,30 +4,26 @@ public:
     bool isPalindrome(ListNode* head)
     {
         vector<int> vals;
-        bool backtracking = false;
-        bool palidrome = true;
-        
+        int i = 0;<
+
         while(head)
         {
+            vals.push_back(head->val);
+        }
 
-            if(backtracking)
-            {
-                
-            }
-            else
-            {
-                if(!vals.empty())
-                {
-                        
-                }
-                
-                vals.push_back(val);
-            }
-            
+        int a = 0;
+        int b = vals.size();
 
-            head = head->next;
+        while(a != b)
+        {
+            if(vals[a] != vals[b])
+                return false;
+                
+            a++
+            b--;
         }
         
-        return palidrome && backtracking;
+        return true;
+
     }
 };
