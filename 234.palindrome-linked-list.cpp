@@ -3,12 +3,12 @@ class Solution
 public:
     bool isPalindrome(ListNode* head)
     {
-        vector<int> vals;
+        vector<ListNode*> vals;
         int i = 0;<
 
         while(head)
         {
-            vals.push_back(head->val);
+            vals.push_back(head);
         }
 
         int a = 0;
@@ -16,10 +16,10 @@ public:
 
         while(a != b)
         {
-            if(vals[a] != vals[b])
+            if(vals[a]->val != vals[b]->val)
                 return false;
                 
-            a++
+            a++;
             b--;
         }
         
