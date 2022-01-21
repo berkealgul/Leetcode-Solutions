@@ -1,18 +1,3 @@
-// @before-stub-for-debug-begin
-#include <vector>
-#include <string>
-#include "commoncppproblem134.h"
-
-using namespace std;
-// @before-stub-for-debug-end
-
-/*
- * @lc app=leetcode id=134 lang=cpp
- *
- * [134] Gas Station
- */
-
-// @lc code=start
 class Solution 
 {
 public:
@@ -46,5 +31,3 @@ public:
         return -1;
     }
 };
-// @lc code=end
-
