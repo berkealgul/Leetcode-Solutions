@@ -1,18 +1,3 @@
-// @before-stub-for-debug-begin
-#include <vector>
-#include <string>
-#include "commoncppproblem45.h"
-
-using namespace std;
-// @before-stub-for-debug-end
-
-/*
- * @lc app=leetcode id=45 lang=cpp
- *
- * [45] Jump Game II
- */
-
-// @lc code=start
 class Solution 
 {
 public:
@@ -41,5 +26,4 @@ public:
     }
 
 };
-// @lc code=end
 
