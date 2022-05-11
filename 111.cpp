@@ -4,7 +4,7 @@ public:
     int minDepth(TreeNode* root) 
     {
         if(!root)
-            return 0; // max number
+            return 0;
         
         int d_l = minDepth(root->left);
         int d_r = minDepth(root->right);
