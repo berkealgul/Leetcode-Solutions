@@ -1,10 +1,3 @@
-/*
- * @lc app=leetcode id=11 lang=cpp
- *
- * [11] Container With Most Water
- */
-
-// @lc code=start
 class Solution 
 {
 public:
@@ -23,5 +16,3 @@ public:
         return vol;
     }
 };
-// @lc code=end
-
