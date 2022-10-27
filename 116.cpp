@@ -14,7 +14,6 @@ public:
         
         while(!set.empty())
         {
-            cout << node->val << " ";
             
             if(count == limit)
             {
